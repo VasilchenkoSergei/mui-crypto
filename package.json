@@ -2,13 +2,16 @@
   "name": "crypto",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://vasilchenkosergei.github.io/mui-crypto",
   "scripts": {
     "build": "rsbuild build",
     "dev": "concurrently \"npm:dev:app\" \"npm:lint:watch\"",
     "dev:app": "rsbuild dev --port 3001 --open",
     "lint:watch": "biome check . --watch",
     "lint": "biome check .",
-    "format": "biome format ."
+    "format": "biome format .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -25,6 +28,7 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "concurrently": "^9.2.1",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.9.3"
   }
 }
