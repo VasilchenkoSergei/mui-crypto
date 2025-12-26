@@ -164,7 +164,7 @@ const themeWithComponents = createTheme({
           '& .MuiInputBase-input': {
             fontSize: '18px',
             color: theme.palette.primary.main,
-            WebkitTextFillColor: `${theme.palette.primary.main} !important`,
+            WebkitTextFillColor: `${theme.palette.primary.main}`,
           },
           '& .MuiOutlinedInput-notchedOutline': {
             borderColor: `${theme.palette.border.default} !important`,

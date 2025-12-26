@@ -6,4 +6,13 @@ export default defineConfig({
   output: {
     assetPrefix: '/mui-crypto/',
   },
+  server: {
+    proxy: {
+      '/b2api': {
+        target: 'https://awx.pro',
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
 });

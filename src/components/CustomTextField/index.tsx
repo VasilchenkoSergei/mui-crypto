@@ -22,6 +22,7 @@ export default function CustomTextField(props: ICustomTextFieldProps) {
     setIsEditing(false);
     setCurrentValue('');
   };
+
   return (
     <TextField
       value={currentValue}

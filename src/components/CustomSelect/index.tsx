@@ -17,7 +17,7 @@ export default function CustomSelect(props: ICustomSelectProps) {
 
   return (
     <Select
-      labelId="payment-method-label"
+      labelId='payment-method-label'
       value={selectedOption}
       onChange={(e) => setSelectedOption(e.target.value)}
       renderValue={renderValue}

@@ -10,6 +10,7 @@
     "lint:watch": "biome check . --watch",
     "lint": "biome check .",
     "format": "biome format .",
+    "format:fix": "biome format --write .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -18,13 +19,18 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.6",
     "@mui/material": "^7.3.6",
+    "axios": "^1.13.2",
+    "lodash.debounce": "^4.0.8",
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "react-number-format": "^5.4.4",
+    "swr": "^2.3.8"
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.8",
     "@rsbuild/core": "^1.6.14",
     "@rsbuild/plugin-react": "^1.4.2",
+    "@types/lodash.debounce": "^4.0.9",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "concurrently": "^9.2.1",

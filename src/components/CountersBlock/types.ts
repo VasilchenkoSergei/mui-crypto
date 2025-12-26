@@ -4,10 +4,6 @@ export interface ICounterCardProps {
   title: string;
   currency: string;
   value: number;
-  onChangeCallback: (value: number) => void;
   isTitleRight?: boolean;
-  min?: number;
-  max?: number;
-  step?: number;
   sx?: SxProps<Theme>;
 }
